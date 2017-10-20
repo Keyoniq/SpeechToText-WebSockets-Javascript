@@ -6,6 +6,24 @@ var minify = require('gulp-minify');
 var git = require('gulp-git');
 var versionBump = require('gulp-bump')
 var tagVersion = require('gulp-tag-version');
+var merge = require('merge2');
+var del = require('del');
+
+gulp.task("default", ["build-commonjs"]);
+
+gulp.task("clean", () => {
+    return del(["dist"]);
+});
+
+gulp.task("build-commonjs", function() {
+    var tsConfigPath = "src/tsconfig.json";
+    var tsProject = ts.createProject("src/tsconfig.json");
+    var tsResult = tsProject.src().pipe(tsProject());
+    return merge([
+        tsResult.js.pipe(gulp.dest("dist")),
+        tsResult.dts.pipe(gulp.dest("dist"))
+    ]);
+});
 
 gulp.task("build", function() {
     return gulp.src([
