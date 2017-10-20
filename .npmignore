@@ -7,3 +7,8 @@
 /.npmrc
 /.vscode
 /web.config
+/.DS_Store
+/src/
+/tslint.json
+/gulpfile.js
+/_config.yml
