@@ -1,7 +1,7 @@
 {
-  "name": "microsoft-speech-browser-sdk",
-  "version": "0.0.5",
-  "description": "Microsoft Speech SDK for browsers",
+  "name": "ms-speech",
+  "version": "0.0.6",
+  "description": "CommonJS fork of Microsoft Speech SDK for browsers",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "keywords": [
@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Azure-Samples/SpeechToText-WebSockets-Javascript.git"
+    "url": "https://github.com/Keyoniq/ms-speech.git"
   },
   "author": "Microsoft",
   "license": "ISC",

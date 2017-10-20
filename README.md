@@ -1,5 +1,12 @@
 [![npm version](https://badge.fury.io/js/microsoft-speech-browser-sdk.svg)](https://www.npmjs.com/package/microsoft-speech-browser-sdk)
 
+# Note about this repository
+
+This is a fork of the [microsoft-speech-browser-sdk microsoft-speech-browser-sdk](https://www.npmjs.com/package/microsoft-speech-browser-sdk) package on npm. This version is built using CommonJS modules, making it suitable for use with codebases that use either CommonJS or ES6 module import syntax, particularly when used with webpack.
+
+The text below is from the original README. For the official version of this SDK
+maintained by Microsoft, see [https://github.com/Azure-Samples/SpeechToText-WebSockets-Javascript](https://github.com/Azure-Samples/SpeechToText-WebSockets-Javascript).
+
 ## Background
 Microsoft's Speech Service is a cloud-based platform that features the most advanced algorithms available for converting spoken audio to text. The Universal Speech Protocol allows you to integrate speech recognition into your application using the Microsoft Speech Service.
 
@@ -100,7 +107,7 @@ What to try the sample ? All you need is a subscription key. [Sign up](https://w
 
 Here is a handy link to our [Sample](https://htmlpreview.github.io/?https://github.com/Azure-Samples/SpeechToText-WebSockets-Javascript/blob/master/samples/browser/Sample.html)  that you can try out. (Rendered using [htmlPreview](https://github.com/htmlpreview/htmlpreview.github.com))
 
-**Note:** Some browsers block microphone access on un-secure origin. So, it is recommended to host the 'sample'/'your app' on https to get it working on all supported browsers. 
+**Note:** Some browsers block microphone access on un-secure origin. So, it is recommended to host the 'sample'/'your app' on https to get it working on all supported browsers.
 
 ## Docs
 The sdk is a reference implementation for the speech websocket protocol. Check the [API reference](https://docs.microsoft.com/en-us/azure/cognitive-services/speech/api-reference-rest/bingvoicerecognition#websocket) and [Websocket protocol reference](https://docs.microsoft.com/en-us/azure/cognitive-services/speech/api-reference-rest/websocketprotocol) for more details.
